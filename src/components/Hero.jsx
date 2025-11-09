@@ -1,5 +1,5 @@
 import Spline from '@splinetool/react-spline';
-import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, Github, Linkedin, Mail, Phone } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -18,8 +18,16 @@ export default function Hero() {
             Piyush Mishra — Software Developer
           </h1>
           <p className="mt-4 text-slate-600 max-w-xl">
-            I build accessible, performant web apps with React and FastAPI. Clean code, thoughtful UX, and security-first mindset.
+            CSE-AI undergraduate building accessible, performant web apps with React, Next.js and Node.js. I focus on clean code,
+            thoughtful UX, and a security-first mindset.
           </p>
+
+          <div className="mt-3 flex flex-wrap items-center gap-4 text-sm text-slate-600">
+            <a href="tel:7666243168" className="inline-flex items-center gap-2 hover:text-slate-900"><Phone size={16}/> 7666243168</a>
+            <span className="hidden sm:inline text-slate-300">•</span>
+            <a href="mailto:2k22.csai.2213601@gmail.com" className="inline-flex items-center gap-2 hover:text-slate-900"><Mail size={16}/> 2k22.csai.2213601@gmail.com</a>
+          </div>
+
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <a href="#projects" className="inline-flex items-center gap-2 rounded-full bg-slate-900 text-white px-5 py-3 text-sm font-semibold hover:bg-slate-700 transition-colors">
               View my work <ArrowRight size={18} />
@@ -33,7 +41,7 @@ export default function Hero() {
             <a href="https://github.com/" target="_blank" rel="noreferrer" className="h-10 w-10 grid place-content-center rounded-full border border-slate-300 hover:bg-slate-50 text-slate-700">
               <Github size={18} />
             </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="h-10 w-10 grid place-content-center rounded-full border border-slate-300 hover:bg-slate-50 text-slate-700">
+            <a href="https://www.linkedin.com/in/piyush-mishra" target="_blank" rel="noreferrer" className="h-10 w-10 grid place-content-center rounded-full border border-slate-300 hover:bg-slate-50 text-slate-700">
               <Linkedin size={18} />
             </a>
             <a href="mailto:2k22.csai.2213601@gmail.com" className="h-10 w-10 grid place-content-center rounded-full border border-slate-300 hover:bg-slate-50 text-slate-700">

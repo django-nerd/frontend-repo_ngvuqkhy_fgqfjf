@@ -1,26 +1,27 @@
 export default function About() {
   return (
-    <section id="about" className="relative py-20 bg-white">
+    <section id="about" className="relative py-20 bg-slate-950 text-slate-200">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-10 items-start">
           <div className="md:col-span-2">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900">About me</h2>
-            <p className="mt-4 text-slate-600">
-              I’m a full‑stack developer with a strong product mindset. I focus on clean architecture, great DX, and a11y. My toolkit includes React, TypeScript, Tailwind, Node.js, Python/FastAPI, and MongoDB.
+            <h2 className="text-3xl font-bold tracking-tight text-white">About me</h2>
+            <p className="mt-4 text-slate-300">
+              I’m a full‑stack developer with a strong focus on security and clean architecture. My toolkit includes React, Node.js/Express, FastAPI, and MongoDB — with a passion for building robust, performant, and accessible products.
             </p>
-            <p className="mt-4 text-slate-600">
-              I enjoy collaborating closely with designers and founders to ship features quickly without sacrificing quality. Performance, testing, and maintainability are first‑class citizens in my workflow.
+            <p className="mt-4 text-slate-300">
+              I lead teams with empathy and clarity, adopt Agile practices, and ship features quickly without sacrificing quality. Testing, CI/CD, and observability are integral to my workflow.
             </p>
           </div>
           <ul className="grid gap-3">
             {[
-              'React • TypeScript • Vite',
-              'Node.js • FastAPI • MongoDB',
+              'React • Next.js • TypeScript • Vite',
+              'Node.js • Express • FastAPI',
+              'MongoDB • Mongoose • Prisma',
               'Tailwind • Radix UI • Framer Motion',
-              'Testing • CI/CD • Cloud Deployments',
+              'Auth • JWT • bcrypt • OWASP Mindset',
             ].map((item) => (
-              <li key={item} className="rounded-xl border border-slate-200 p-4 bg-white shadow-sm">
-                <span className="text-sm font-semibold text-slate-800">{item}</span>
+              <li key={item} className="rounded-xl border border-white/10 p-4 bg-white/5 shadow-sm">
+                <span className="text-sm font-semibold text-slate-200">{item}</span>
               </li>
             ))}
           </ul>
